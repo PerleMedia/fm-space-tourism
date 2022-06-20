@@ -1,32 +1,38 @@
-h1,
-.heading-one{
+h1, h2, h3, h4{
   font-family: $bellefair;
+  text-transform: uppercase;
+  font-weight:400;
+  margin:.75rem 0;
+}
+
+h1{
   font-size: $text150;
 }
 
-h2,
-.heading-two{
-  font-family: $bellefair;
+h2{
   font-size: $text100;
 }
 
-h3,
-.heading-three{
-  font-family: $bellefair;
+h3{
   font-size: $text56;
 }
 
-h4,
-.heading-four{
-  font-family: $bellefair;
+h4{
   font-size: $text32;
 }
 
-h5,
-.heading-five{
+h5{
   font-family: $barlowcondensed;
   font-size: $text28;
   letter-spacing:4.75px;
+  text-transform: uppercase;
+  font-weight:400;
+  margin:.75rem 0;
+}
+
+p{
+  line-height:1.78;
+  margin:.75rem 0 0;
 }
 
 .subheading-one{

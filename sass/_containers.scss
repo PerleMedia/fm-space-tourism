@@ -1,0 +1,45 @@
+.content{
+  box-sizing: border-box;
+  background-size:cover;
+  padding-top:40px;
+
+  .flex{
+    display:flex;
+    align-items: center;
+  }
+
+  main{
+    display:flex;
+    padding:0 167px 131px;
+    min-height: calc(100vh - 136px);
+    box-sizing: border-box;
+
+    .row{
+      display:flex;
+      width:100%;
+
+      &.cols-2 > *{
+        width:50%;
+      }
+      &.cols-3 > *{
+        width:33.33%;
+      }
+      &.cols-4 > *{
+        width:25%;
+      }
+    }
+  }
+
+  @media (max-width:$mddesktop){
+
+  }
+  @media (max-width:$smdesktop){
+
+  }
+  @media (max-width:$tablet){
+
+  }
+  @media (max-width:$mobile){
+
+  }
+}

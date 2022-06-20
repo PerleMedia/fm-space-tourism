@@ -2,17 +2,30 @@
 
 @font-face {
   font-family: "Bellefair Regular";
-  src: url('/fonts/Bellefair-Regular.ttf');
+  src: url('fonts/Bellefair-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Barlow Regular";
   src: url('fonts/Barlow-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Barlow Condensed Regular";
   src: url('fonts/BarlowCondensed-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow Condensed Regular";
+  src: url('fonts/BarlowCondensed-Bold.ttf');
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* Global */
@@ -20,18 +33,19 @@ body{
   margin:0;
   font-family:$barlow;
   font-size:$text18;
+  line-height: 1.15;
   background-color:$darkblue;
   color:$lightblue;
-
-  .content{
-    min-height:100vh;
-    box-sizing: border-box;
-    background-size:cover;
-  }
 }
+
+/* Structure */
+@import "containers";
 
 /* Typography */
 @import "typography";
 
+/* Header */
+@import "pages/header";
+
 /* Front Page */
-@import "pages/front-page";
+@import "pages/page-home";

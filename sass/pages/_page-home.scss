@@ -1,0 +1,64 @@
+#front-page{
+  background-image:url('images/home/background-home-desktop.jpg');
+  background-position:center right;
+
+  main{
+    .row{
+      align-items: flex-end;
+
+      .text-content{
+        p{
+          width:28.125rem;
+        }
+      }
+
+      .explore{
+        display:flex;
+        justify-content: flex-end;
+        .explore-button{
+          justify-content: center;
+          background-color:$white;
+          color:$darkblue;
+          width:274px;
+          height:274px;
+          border-radius:100%;
+          cursor:pointer;
+          z-index:1;
+
+          &:hover ~ .explore-hover{
+            transform:scale(1.64);
+          }
+
+          h4{
+            margin:0;
+          }
+        }
+
+        .explore-hover{
+          position:absolute;
+          width:274px;
+          height:274px;
+          border-radius:100%;
+          transform:scale(1);
+          transition:.7s all ease-out;
+          background-color:rgba(255,255,255,.104);
+        }
+
+
+      }
+    }
+  }
+
+  @media (max-width:$mddesktop){
+
+  }
+  @media (max-width:$smdesktop){
+
+  }
+  @media (max-width:$tablet){
+
+  }
+  @media (max-width:$mobile){
+
+  }
+}
