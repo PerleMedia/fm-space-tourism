@@ -1,11 +1,9 @@
-#front-page{
+#front-page.content{
   background-image:url('images/home/background-home-desktop.jpg');
   background-position:center right;
 
   main{
     .row{
-      align-items: flex-end;
-
       .text-content{
         p{
           width:28.125rem;

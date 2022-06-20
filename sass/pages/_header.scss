@@ -5,7 +5,6 @@
   nav{
     margin-left:auto;
     height: 96px;
-    padding:0 141px 0 99px;
     background-color:rgba(255,255,255,.04);
     backdrop-filter:blur(81.55px);
 
@@ -19,16 +18,8 @@
     }
 
     ul#main-menu{
-      display:flex;
-      list-style-type: none;
-      padding:0;
-
+      margin:0 141px 0 99px;    
       li{
-        padding:0 24px;
-        font-family: $barlowcondensed;
-        font-size:$text16;
-        letter-spacing:2.7px;
-        text-transform: uppercase;
         a{
           color: $white;
           span{

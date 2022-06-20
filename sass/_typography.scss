@@ -2,15 +2,17 @@ h1, h2, h3, h4{
   font-family: $bellefair;
   text-transform: uppercase;
   font-weight:400;
-  margin:.75rem 0;
+  margin:1.25rem 0;
 }
 
 h1{
   font-size: $text150;
+  color:$white;
 }
 
 h2{
   font-size: $text100;
+  color:$white;
 }
 
 h3{
@@ -27,15 +29,39 @@ h5{
   letter-spacing:4.75px;
   text-transform: uppercase;
   font-weight:400;
-  margin:.75rem 0;
+  margin:1.25rem 0;
 }
 
 p{
   line-height:1.78;
-  margin:.75rem 0 0;
+  margin:1.25rem 0 0;
+}
+
+a{
+  text-decoration: none;
 }
 
 .subheading-one{
+  display:block;
   font-family: $bellefair;
   font-size: $text28;
+  text-transform: uppercase;
+  color:$white;
+  margin:12px 0;
+}
+
+.subheading-two{
+  display:block;
+  font-family: $barlowcondensed;
+  font-size: $text14;
+  letter-spacing:2.35px;
+  text-transform: uppercase;
+}
+
+.nav-text{
+  padding:0 24px;
+  font-family: $barlowcondensed;
+  font-size:$text16;
+  letter-spacing:2.7px;
+  text-transform: uppercase;
 }

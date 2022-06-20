@@ -38,6 +38,17 @@ body{
   color:$lightblue;
 }
 
+ul{
+  list-style-type: none;
+  padding:0;
+}
+
+button{
+  background:transparent;
+  border:none;
+  border-radius:0;
+}
+
 /* Structure */
 @import "containers";
 
@@ -49,3 +60,6 @@ body{
 
 /* Front Page */
 @import "pages/page-home";
+
+/* Destination Page */
+@import "pages/page-destination";

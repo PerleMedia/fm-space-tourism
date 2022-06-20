@@ -5,12 +5,19 @@
 
   .flex{
     display:flex;
+  }
+
+  .align-c{
     align-items: center;
+  }
+
+  .align-fe{
+    align-items: flex-end;
   }
 
   main{
     display:flex;
-    padding:0 167px 131px;
+    padding:40px 167px 131px;
     min-height: calc(100vh - 136px);
     box-sizing: border-box;
 
