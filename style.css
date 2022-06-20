@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Bellefair Regular";
+  src: url("/fonts/Bellefair-Regular.ttf");
+}
+@font-face {
+  font-family: "Barlow Regular";
+  src: url("fonts/Barlow-Regular.ttf");
+}
+@font-face {
+  font-family: "Barlow Condensed Regular";
+  src: url("fonts/BarlowCondensed-Regular.ttf");
+}
+/* Global */
+body {
+  margin: 0;
+  font-family: "Barlow Regular", sans-serif;
+  font-size: 1.125rem;
+  background-color: #0B0D17;
+  color: #D0D6F9;
+}
+body .content {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+/* Typography */
+h1,
+.heading-one {
+  font-family: "Bellefair Regular", serif;
+  font-size: 9.375rem;
+}
+
+h2,
+.heading-two {
+  font-family: "Bellefair Regular", serif;
+  font-size: 6.25rem;
+}
+
+h3,
+.heading-three {
+  font-family: "Bellefair Regular", serif;
+  font-size: 3.5rem;
+}
+
+h4,
+.heading-four {
+  font-family: "Bellefair Regular", serif;
+  font-size: 2rem;
+}
+
+h5,
+.heading-five {
+  font-family: "Barlow Condensed Regular", sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 4.75px;
+}
+
+.subheading-one {
+  font-family: "Bellefair Regular", serif;
+  font-size: 1.75rem;
+}
+
+/* Front Page */
+#front-page {
+  background-image: url("images/home/background-home-desktop.jpg");
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+@import "variables/variables";
+
+@font-face {
+  font-family: "Bellefair Regular";
+  src: url('/fonts/Bellefair-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Barlow Regular";
+  src: url('fonts/Barlow-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Barlow Condensed Regular";
+  src: url('fonts/BarlowCondensed-Regular.ttf');
+}
+
+/* Global */
+body{
+  margin:0;
+  font-family:$barlow;
+  font-size:$text18;
+  background-color:$darkblue;
+  color:$lightblue;
+
+  .content{
+    min-height:100vh;
+    box-sizing: border-box;
+    background-size:cover;
+  }
+}
+
+/* Typography */
+@import "typography";
+
+/* Front Page */
+@import "pages/front-page";
