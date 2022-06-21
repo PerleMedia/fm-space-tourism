@@ -2,21 +2,13 @@
   background-image:url('images/destination/background-destination-desktop.jpg');
 
   main{
-
     .row{
-
       .dest-selection{
-        h5{
-          span{
-            margin-right:20px;
-            font-weight:600;
-            color:rgba(255,255,255,.25);
-          }
-        }
         #dest-image{
           display:block;
           width:80%;
           margin:97px auto 0;
+          animation: rotation 300s infinite linear;
         }
       }
       .dest-content{
@@ -31,9 +23,31 @@
                 padding:0;
                 margin:0 36px 0 0;
                 color:$lightblue;
+                position:relative;
+                transition:all .4s ease-out;
 
-                &.active{
+                &::after{
+                  content:'';
+                  position:absolute;
+                  width:0;
+                  height:3px;
+                  left:0;
+                  bottom:-12px;
+                  transition:all .4s ease-out;
+                }
+                &:hover::after{
+                  width:100%;
+                  background-color:rgba(255,255,255,.5);
+                }
+                &.d-active{
                   color:$white;
+                  &::after{
+                    content:'';
+                    width:100%;
+                    background:$white;
+                    opacity:1;
+
+                  }
                 }
               }
             }
@@ -62,5 +76,14 @@
   }
   @media (max-width:$mobile){
 
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }
