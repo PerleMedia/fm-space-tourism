@@ -1,0 +1,70 @@
+#crew.content{
+	background-image:url('images/crew/background-crew-desktop.jpg');
+	main{
+		padding-bottom:0;
+		padding-right:0;
+		.row{
+			.splide{
+				width:100%;
+				.splide__arrows {
+					display:none;
+				}
+				.splide__pagination{
+					width: 50%;
+					padding:0;
+					margin-bottom:84px;
+    			justify-content: flex-start;
+					button{
+						width:15px;
+						height:15px;
+						margin-right:24px;
+						opacity:.174;
+						transition:opacity .4s ease-out;
+
+						&:hover{
+							opacity:.5;
+						}
+
+						&.is-active{
+							transform:scale(1);
+							opacity:1;
+						}
+					}
+				}
+				ul.splide__list{
+					li{
+						.crew-text{
+							margin-bottom:197px;
+							h4{
+								opacity:.5;
+							}
+							h3{
+								color:$white;
+							}
+							p{
+								width:70%;
+							}
+						}
+						.crew-photo{
+							img{
+								max-height:calc(100vh - 176px);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+  @media (max-width:$mddesktop){
+
+  }
+  @media (max-width:$smdesktop){
+
+  }
+  @media (max-width:$tablet){
+
+  }
+  @media (max-width:$mobile){
+
+  }
+}

@@ -269,7 +269,7 @@ a {
   margin: 0 36px 0 0;
   color: #D0D6F9;
   position: relative;
-  transition: all 0.4s ease-out;
+  transition: color 0.4s ease-out;
 }
 #destination.content main .row .dest-content .content-wrapper ul.destination-menu li button::after {
   content: "";
@@ -307,6 +307,55 @@ a {
   to {
     transform: rotate(359deg);
   }
+}
+/* Crew Page */
+#crew.content {
+  background-image: url("images/crew/background-crew-desktop.jpg");
+}
+#crew.content main {
+  padding-bottom: 0;
+  padding-right: 0;
+}
+#crew.content main .row .splide {
+  width: 100%;
+}
+#crew.content main .row .splide .splide__arrows {
+  display: none;
+}
+#crew.content main .row .splide .splide__pagination {
+  width: 50%;
+  padding: 0;
+  margin-bottom: 84px;
+  justify-content: flex-start;
+}
+#crew.content main .row .splide .splide__pagination button {
+  width: 15px;
+  height: 15px;
+  margin-right: 24px;
+  opacity: 0.174;
+  transition: opacity 0.4s ease-out;
+}
+#crew.content main .row .splide .splide__pagination button:hover {
+  opacity: 0.5;
+}
+#crew.content main .row .splide .splide__pagination button.is-active {
+  transform: scale(1);
+  opacity: 1;
+}
+#crew.content main .row .splide ul.splide__list li .crew-text {
+  margin-bottom: 197px;
+}
+#crew.content main .row .splide ul.splide__list li .crew-text h4 {
+  opacity: 0.5;
+}
+#crew.content main .row .splide ul.splide__list li .crew-text h3 {
+  color: #FFFFFF;
+}
+#crew.content main .row .splide ul.splide__list li .crew-text p {
+  width: 70%;
+}
+#crew.content main .row .splide ul.splide__list li .crew-photo img {
+  max-height: calc(100vh - 176px);
 }
 
 /*# sourceMappingURL=style.css.map */
