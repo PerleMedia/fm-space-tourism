@@ -74,7 +74,7 @@
           order:2;
           ul.splide__list{
   					li{
-  						.crew-text{
+  						.tech-text{
                 padding:0 10px;
                 align-self:center;
   							.nav-text{
@@ -88,7 +88,7 @@
   								width:80%;
   							}
   						}
-  						.crew-photo{
+  						.tech-photo{
                 text-align:right;
   							img{
   								max-height:calc(100vh - 277px);
@@ -117,7 +117,7 @@
           .splide__track{
             ul.splide__list{
     					li{
-    						.crew-photo{
+    						.tech-photo{
                   align-self: center;
                 }
               }
@@ -159,7 +159,7 @@
           .splide__track{
             ul.splide__list{
     					li{
-                .crew-text{
+                .tech-text{
                   order:2;
                   padding-top:40px;
                   h3{
@@ -170,7 +170,7 @@
                     margin:0 auto;
                   }
                 }
-    						.crew-photo{
+    						.tech-photo{
                   margin-bottom: 160px;
                   order:1;
                   img{
@@ -214,7 +214,7 @@
           .splide__track{
             ul.splide__list{
     					li{
-                .crew-text{
+                .tech-text{
                   padding:40px 24px;
                   h3{
                   }
@@ -222,7 +222,7 @@
                     width: 100%;
                   }
                 }
-    						.crew-photo{
+    						.tech-photo{
                   padding-top: 50px;
                   margin-bottom: 50px;
                   img{

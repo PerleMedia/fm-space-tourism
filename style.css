@@ -131,7 +131,7 @@ h3 {
   font-size: 3.5rem;
 }
 
-h4 {
+h4 .heading-four {
   font-size: 2rem;
 }
 
@@ -178,6 +178,10 @@ a {
   text-transform: uppercase;
 }
 
+.split-text {
+  overflow: hidden;
+}
+
 @media (max-width: 991px) {
   h1, h2, h3, h4 {
     margin: 0.5rem 0;
@@ -188,11 +192,13 @@ a {
   h3 {
     font-size: 2.5rem;
   }
-  h4 {
+  h4,
+.heading-four {
     font-size: 1.5rem;
   }
   h5 {
     font-size: 1.25rem;
+    letter-spacing: 3.38px;
   }
   p {
     font-size: 1rem;
@@ -207,6 +213,10 @@ a {
   }
   h3 {
     font-size: 1.5rem;
+  }
+  h4,
+.heading-four {
+    font-size: 1rem;
   }
   h5 {
     font-size: 1rem;
@@ -777,28 +787,28 @@ a {
 #technology.content main .row .splide .splide__track {
   order: 2;
 }
-#technology.content main .row .splide .splide__track ul.splide__list li .crew-text {
+#technology.content main .row .splide .splide__track ul.splide__list li .tech-text {
   padding: 0 10px;
   align-self: center;
 }
-#technology.content main .row .splide .splide__track ul.splide__list li .crew-text .nav-text {
+#technology.content main .row .splide .splide__track ul.splide__list li .tech-text .nav-text {
   padding: 0;
 }
-#technology.content main .row .splide .splide__track ul.splide__list li .crew-text h3 {
+#technology.content main .row .splide .splide__track ul.splide__list li .tech-text h3 {
   color: #FFFFFF;
   margin-top: 10px;
 }
-#technology.content main .row .splide .splide__track ul.splide__list li .crew-text p {
+#technology.content main .row .splide .splide__track ul.splide__list li .tech-text p {
   width: 80%;
 }
-#technology.content main .row .splide .splide__track ul.splide__list li .crew-photo {
+#technology.content main .row .splide .splide__track ul.splide__list li .tech-photo {
   text-align: right;
 }
-#technology.content main .row .splide .splide__track ul.splide__list li .crew-photo img {
+#technology.content main .row .splide .splide__track ul.splide__list li .tech-photo img {
   max-height: calc(100vh - 277px);
   max-width: 100%;
 }
-#technology.content main .row .splide .splide__track ul.splide__list li .crew-photo img.landscape-img {
+#technology.content main .row .splide .splide__track ul.splide__list li .tech-photo img.landscape-img {
   display: none;
 }
 @media (max-width: 1399px) {
@@ -807,7 +817,7 @@ a {
   }
 }
 @media (max-width: 1199px) {
-  #technology.content main .row .splide .splide__track ul.splide__list li .crew-photo {
+  #technology.content main .row .splide .splide__track ul.splide__list li .tech-photo {
     align-self: center;
   }
 }
@@ -842,26 +852,26 @@ a {
     width: 60px;
     line-height: 60px;
   }
-  #technology.content main .row .splide .splide__track ul.splide__list li .crew-text {
+  #technology.content main .row .splide .splide__track ul.splide__list li .tech-text {
     order: 2;
     padding-top: 40px;
   }
-  #technology.content main .row .splide .splide__track ul.splide__list li .crew-text h3 {
+  #technology.content main .row .splide .splide__track ul.splide__list li .tech-text h3 {
     margin: 16px 0;
   }
-  #technology.content main .row .splide .splide__track ul.splide__list li .crew-text p {
+  #technology.content main .row .splide .splide__track ul.splide__list li .tech-text p {
     width: 58%;
     margin: 0 auto;
   }
-  #technology.content main .row .splide .splide__track ul.splide__list li .crew-photo {
+  #technology.content main .row .splide .splide__track ul.splide__list li .tech-photo {
     margin-bottom: 160px;
     order: 1;
   }
-  #technology.content main .row .splide .splide__track ul.splide__list li .crew-photo img.landscape-img {
+  #technology.content main .row .splide .splide__track ul.splide__list li .tech-photo img.landscape-img {
     display: block;
     width: 100%;
   }
-  #technology.content main .row .splide .splide__track ul.splide__list li .crew-photo img.portrait-img {
+  #technology.content main .row .splide .splide__track ul.splide__list li .tech-photo img.portrait-img {
     display: none;
   }
 }
@@ -885,13 +895,13 @@ a {
     font-size: 1rem;
     line-height: 40px;
   }
-  #technology.content main .row .splide .splide__track ul.splide__list li .crew-text {
+  #technology.content main .row .splide .splide__track ul.splide__list li .tech-text {
     padding: 40px 24px;
   }
-  #technology.content main .row .splide .splide__track ul.splide__list li .crew-text p {
+  #technology.content main .row .splide .splide__track ul.splide__list li .tech-text p {
     width: 100%;
   }
-  #technology.content main .row .splide .splide__track ul.splide__list li .crew-photo {
+  #technology.content main .row .splide .splide__track ul.splide__list li .tech-photo {
     padding-top: 50px;
     margin-bottom: 50px;
   }

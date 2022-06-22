@@ -9,7 +9,11 @@
 
     <title>Frontend Mentor | Space tourism website</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/splittext.js"></script>
+    <script src="js/gsap.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -17,26 +21,26 @@
       <!-- Header -->
       <header id="header" class="flex align-c">
         <a href="index.html" class="logo-link"><img class="logo" src="images/logo.svg" alt="Space Tourism Logo"/></a>
-        <button id="mobile-toggle" class="mobile-toggle" onclick="mobileToggle()"><img class="menu-button" src="images/icon-hamburger.svg" /><img class="close-button" src="images/icon-close.svg" /></button>
+        <button id="mobile-toggle" class="mobile-toggle" onclick="mobileToggle()" aria-hidden><img class="menu-button" src="images/icon-hamburger.svg" /><img class="close-button" src="images/icon-close.svg" /></button>
         <nav class="navigation flex align-c" role="navigation" aria-label="Main menu">
           <ul id="main-menu" class="flex">
             <li class="menu-item active">
-              <a class="menu-link nav-text" aria-label="Home" href="index.html"><span>00</span>Home</a>
+              <a class="menu-link nav-text" aria-label="Home" href="index.html"><span aria-hidden>00</span>Home</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link nav-text" aria-label="Destination" href="destination.html"><span>01</span>Destination</a>
+              <a class="menu-link nav-text" aria-label="Destination" href="destination.html"><span aria-hidden>01</span>Destination</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link nav-text" aria-label="Crew" href="crew.html"><span>02</span>Crew</a>
+              <a class="menu-link nav-text" aria-label="Crew" href="crew.html"><span aria-hidden>02</span>Crew</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link nav-text" aria-label="Technology" href="technology.html"><span>03</span>Technology</a>
+              <a class="menu-link nav-text" aria-label="Technology" href="technology.html"><span aria-hidden>03</span>Technology</a>
             </li>
 
           </ul>
         </nav>
 
-        <div id="hover-underline" class="hover-underline">
+        <div id="hover-underline" class="hover-underline" aria-hidden>
 
         </div>
       </header>
@@ -45,19 +49,19 @@
       <main>
         <div class="row cols-2 align-fe">
           <div class="text-content">
-            <h5>So, you want to travel to</h5>
-            <h1>Space</h1>
-            <p>
+            <h5 class="split-text">So, you want to travel to</h5>
+            <h1 class="gsap-fade-in-up">Space</h1>
+            <p class="gsap-fade-in-up">
               Let’s face it; if you want to go to space, you might as well genuinely go to
               outer space and not hover kind of on the edge of it. Well sit back, and relax
               because we’ll give you a truly out of this world experience!
             </p>
           </div>
-          <div class="explore">
-            <div class="explore-button flex align-c">
-              <h4>Explore</h4>
+          <div class="explore gsap-fade-in-right">
+            <div class="explore-button flex align-c" onclick="javascript:location.href='destination.html'">
+              <h4 aria-label="Explore button">Explore</h4>
             </div>
-            <div class="explore-hover"></div>
+            <div class="explore-hover" aria-hidden></div>
           </div>
         </div>
 

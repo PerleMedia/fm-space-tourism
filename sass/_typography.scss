@@ -19,7 +19,8 @@ h3{
   font-size: $text56;
 }
 
-h4{
+h4
+.heading-four{
   font-size: $text32;
 }
 
@@ -66,6 +67,10 @@ a{
   text-transform: uppercase;
 }
 
+.split-text{
+  overflow: hidden;
+}
+
 @media (max-width:$tablet){
   h1, h2, h3, h4{
     margin: 0.5rem 0;
@@ -76,11 +81,13 @@ a{
   h3{
     font-size: $text40;
   }
-  h4{
+  h4,
+  .heading-four{
     font-size:$text24;
   }
   h5{
     font-size: $text20;
+    letter-spacing: 3.38px;
   }
   p{
     font-size:$text16;
@@ -96,6 +103,10 @@ a{
   }
   h3{
     font-size:$text24;
+  }
+  h4,
+  .heading-four{
+    font-size:$text16;
   }
   h5{
     font-size:$text16;
