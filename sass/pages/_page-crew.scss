@@ -48,6 +48,7 @@
 						.crew-photo{
 							img{
 								max-height:calc(100vh - 176px);
+								max-width:100%;
 							}
 						}
 					}
@@ -59,10 +60,76 @@
 
   }
   @media (max-width:$smdesktop){
-
+		main{
+			padding-left:85px;
+			.row{
+				.splide{
+					.splide__arrows {
+					}
+					.splide__pagination{
+						margin-bottom:55px;
+					}
+					ul.splide__list{
+						li{
+							.crew-text{
+								margin-bottom:133px;
+							}
+						}
+					}
+				}
+			}
+		}
   }
   @media (max-width:$tablet){
+		background-image:url('images/crew/background-crew-tablet.jpg');
+		main{
+			padding:124px 39px 0;
+			.row{
+				.splide{
+					.splide__arrows {
+					}
+					.splide__pagination{
+						width:100%;
+						justify-content: center;
+						bottom: 52vh;
+						height: 10px;
+						button{
+							width:10px;
+							height:10px;
+							margin-right:unset;
+							margin:0 8px;
+							&:hover{
+							}
 
+							&.is-active{
+							}
+						}
+					}
+					.splide__track{
+						ul.splide__list{
+							li{
+								.crew-text{
+									margin-bottom:100px;
+									h4{
+									}
+									h3{
+									}
+									p{
+										width: 80%;
+    								margin: 0 auto;
+									}
+								}
+								.crew-photo{
+									img{
+										max-height:52vh;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
   }
   @media (max-width:$mobile){
 

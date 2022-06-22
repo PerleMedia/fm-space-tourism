@@ -72,7 +72,49 @@
 
   }
   @media (max-width:$tablet){
+    background-image: url('images/destination/background-destination-tablet.jpg');
+    main{
+      .row{
+        .dest-selection{
+          #dest-image{
+            width:43%;
+          }
+        }
+        .dest-content{
+          .content-wrapper{
+            width:100%;
+            margin-left:unset;
 
+            ul.destination-menu{
+              justify-content: center;
+              margin-top:53px;
+              li{
+                button{
+                  margin:0 18px;
+                  &::after{
+                  }
+                  &:hover::after{
+                  }
+                  &.d-active{
+                    &::after{
+                    }
+                  }
+                }
+              }
+            }
+            #dest-description{
+              margin:0 57px;
+              p{
+                min-height:133px;
+              }
+              .dest-data{
+                flex-wrap: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   @media (max-width:$mobile){
 

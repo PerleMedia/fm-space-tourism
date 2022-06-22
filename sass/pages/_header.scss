@@ -7,6 +7,7 @@
     height: 96px;
     background-color:rgba(255,255,255,.04);
     backdrop-filter:blur(81.55px);
+    z-index: 98;
 
     &::before{
       content:'';
@@ -52,6 +53,7 @@
     position:absolute;
     top:133px;
     transition:all .4s ease-out;
+    z-index:99;
   }
 
   .page-title{
@@ -68,13 +70,59 @@
   }
 
   @media (max-width:$mddesktop){
-
+    nav{
+      &::before{
+        content:'';
+        width:calc((100vw - 117px) - 100%);
+      }
+      ul#main-menu{
+        margin:0 121px 0 99px;
+      }
+    }
+    .page-title{
+      margin-left: 95px;
+      h5{
+        span{
+        }
+      }
+    }
   }
   @media (max-width:$smdesktop){
-
+    .page-title{
+      margin-left: 30px;
+      h5{
+        span{
+        }
+      }
+    }
   }
   @media (max-width:$tablet){
+    width:calc(100% - 39px);
+    nav{
+      &::before{
+        display:none;
+      }
 
+      ul#main-menu{
+        margin:0;
+        padding:0 24px;
+        li{
+          &.active::after{
+          }
+          a{
+            span{
+              display:none;
+            }
+          }
+        }
+      }
+    }
+    .page-title{
+      margin-left: 0;
+    }
+    .hover-underline{
+      top:93px;
+    }
   }
   @media (max-width:$mobile){
 

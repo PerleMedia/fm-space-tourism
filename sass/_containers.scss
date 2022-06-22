@@ -38,13 +38,30 @@
   }
 
   @media (max-width:$mddesktop){
-
+    main{
+      padding:40px 147px 85px;
+    }
   }
   @media (max-width:$smdesktop){
-
+    main{
+      padding:40px 85px 55px;
+    }
   }
   @media (max-width:$tablet){
-
+    padding-top:0;
+    main{
+      padding: 40px 39px 90px;
+      min-height: calc(100vh - 96px);
+      .row{
+        flex-wrap:wrap;
+        text-align: center;
+        &.cols-2 > *,
+        &.cols-3 > *,
+        &.cols-4 > *{
+          width:100%;
+        }
+      }
+    }
   }
   @media (max-width:$mobile){
 

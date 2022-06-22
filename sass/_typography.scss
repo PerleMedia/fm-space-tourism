@@ -65,3 +65,24 @@ a{
   letter-spacing:2.7px;
   text-transform: uppercase;
 }
+
+@media (max-width:$tablet){
+  h1, h2, h3, h4{
+    margin: 0.5rem 0;
+  }
+  h2{
+    font-size: $text80;
+  }
+  h3{
+    font-size: $text40;
+  }
+  h4{
+    font-size:$text24;
+  }
+  h5{
+    font-size: $text20;
+  }
+  p{
+    font-size:$text16;
+  }
+}

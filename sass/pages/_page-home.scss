@@ -54,7 +54,22 @@
 
   }
   @media (max-width:$tablet){
-
+    background-image:url('images/home/background-home-tablet.jpg');
+    main{
+      .row{
+        .text-content{
+          p{
+            width:85%;
+            margin:0 auto;
+            padding-bottom:50px;
+          }
+        }
+        .explore{
+          justify-content: center;
+          align-self: flex-end;
+        }
+      }
+    }
   }
   @media (max-width:$mobile){
 
