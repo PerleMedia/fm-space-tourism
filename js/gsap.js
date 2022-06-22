@@ -34,6 +34,7 @@ jQuery(document).ready(function($) {
         });
     });
     }
+    ScrollTrigger.addEventListener("refresh", setupSplits);
     setupSplits();
 
 
@@ -105,5 +106,23 @@ jQuery(document).ready(function($) {
              });
          });
      }
+
+     // Handle screen resizing
+    function toggleStateOnResize(e) {
+    if (e.matches) {
+        // Desktop
+        toggleMenu.removeEventListener('click', animateIt);
+        tl.pause(1);
+        $('.menu-main-navigation-container').css('display', 'block');
+
+    } else {
+        // Mobile
+        toggleMenu.addEventListener('click', animateIt);
+        tl.pause(0).reversed(true)
+    }
+    }
+
+    mediaQueryList.addListener(toggleStateOnResize);
+
 
 });

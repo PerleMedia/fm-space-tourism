@@ -110,7 +110,7 @@ button {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .heading-four {
   font-family: "Bellefair Regular", serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -131,7 +131,8 @@ h3 {
   font-size: 3.5rem;
 }
 
-h4 .heading-four {
+h4,
+.heading-four {
   font-size: 2rem;
 }
 

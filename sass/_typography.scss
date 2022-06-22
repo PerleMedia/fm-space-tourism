@@ -1,4 +1,4 @@
-h1, h2, h3, h4{
+h1, h2, h3, h4, .heading-four{
   font-family: $bellefair;
   text-transform: uppercase;
   font-weight:400;
@@ -19,7 +19,7 @@ h3{
   font-size: $text56;
 }
 
-h4
+h4,
 .heading-four{
   font-size: $text32;
 }
