@@ -49,7 +49,6 @@ function navHoverLine(){
     }
   }, 500);
 };
-
 document.addEventListener("DOMContentLoaded", navHoverLine());
 
 /***
@@ -64,12 +63,6 @@ function destMars(place){
   destTitle.innerText = place;
 
   switch(place) {
-  case 'MOON':
-    destParagraph.innerText = "See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.";
-    destDistance.innerText = "384,400 km";
-    destTravel.innerText = "3 days";
-    destImage.src = "images/destination/image-moon.png";
-    break;
   case 'MARS':
     destParagraph.innerText = "Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!";
     destDistance.innerText = "225 mil. km";
@@ -101,9 +94,9 @@ function destMars(place){
  ** Select Active Destination
 ***/
 function activeclassSelect(e) {
-  let elems = document.querySelectorAll(".d-active");
+  let destActive = document.querySelectorAll(".d-active");
   let selectedDest = '';
-  [].forEach.call(elems, function(el) {
+  [].forEach.call(destActive, function(el) {
       if (e.target.type == 'submit'){
         el.classList.remove("d-active");
       }
@@ -113,4 +106,10 @@ if (e.target.type == 'submit'){
   selectedDest = e.target.innerText;
   destMars(selectedDest);
   }
+}
+
+
+function mobileToggle() {
+  var element = document.getElementById('mobile-toggle');
+  element.classList.toggle('active');
 }

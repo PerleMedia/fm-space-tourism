@@ -117,7 +117,51 @@
     }
   }
   @media (max-width:$mobile){
+    background-image: url('images/destination/background-destination-mobile.jpg');
+    main{
+      .row{
+        .dest-selection{
+            padding-top: 50px;
+          #dest-image{
+            width:60%;
+            margin: auto;
+          }
+        }
+        .dest-content{
+          .content-wrapper{
 
+            ul.destination-menu{
+              margin:26px auto 30px;
+              li{
+                button{
+                  font-size: $text14;
+                  &::after{
+                  }
+                  &:hover::after{
+                  }
+                  &.d-active{
+                    &::after{
+                    }
+                  }
+                }
+              }
+            }
+            #dest-description{
+              margin:0;
+              p{
+                margin-bottom: 32px;
+              }
+              .dest-data{
+                flex-wrap: wrap;
+                #dest-distance{
+                  margin-bottom: 32px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

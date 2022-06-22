@@ -132,6 +132,52 @@
 		}
   }
   @media (max-width:$mobile){
+		background-image:url('images/crew/background-crew-mobile.jpg');
+		main{
+			padding: 0 24px 24px 24px;
+			.row{
+				.splide{
+					.splide__arrows {
+					}
+					.splide__pagination{
+						top: calc(33vh + 75px);
+						button{
+							&:hover{
+							}
 
+							&.is-active{
+							}
+						}
+					}
+					.splide__track{
+						ul.splide__list{
+							li{
+								align-items: flex-start;
+								.crew-text{
+									order:2;
+									padding-top: 50px;
+									margin-bottom: 50px;
+									h4{
+									}
+									h3{
+									}
+									p{
+										width: 100%;
+									}
+								}
+								.crew-photo{
+									padding-top: 50px;
+									border-bottom:1px solid $gray;
+									img{
+										height: 33vh;
+										min-height: 225px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
   }
 }

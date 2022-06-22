@@ -72,6 +72,27 @@
     }
   }
   @media (max-width:$mobile){
-
+    background-image:url('images/home/background-home-mobile.jpg');
+    main{
+      .row{
+        align-items: flex-start;
+        .text-content{
+          p{
+            width:100%;
+          }
+        }
+        .explore{
+          align-self:flex-start;
+          .explore-button{
+            width:150px;
+            height:150px;
+          }
+          .explore-hover{
+            width:150px;
+            height:150px;
+          }
+        }
+      }
+    }
   }
 }
